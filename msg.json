@@ -1,0 +1,9 @@
+{
+   "@type":"/edk208.entropy.diffusion.MsgGenerateim",
+   "creator":"entropy19hg7cwycsf9ze8lcqe5y69a995chvdzt5zny7t",
+   "count": "1",
+   "machine":"gtx3090",
+   "model":"photoreal",
+   "prompt":"frog",
+   "seed":"2"
+}

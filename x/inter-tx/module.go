@@ -18,6 +18,7 @@ import (
 	"github.com/cosmos/interchain-accounts/x/inter-tx/client/cli"
 	"github.com/cosmos/interchain-accounts/x/inter-tx/keeper"
 	"github.com/cosmos/interchain-accounts/x/inter-tx/types"
+	entropy "github.com/edk208/entropy/x/diffusion/types"
 )
 
 var (
@@ -50,6 +51,7 @@ func (AppModuleBasic) RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
 // RegisterInterfaces registers the module's interface types
 func (a AppModuleBasic) RegisterInterfaces(reg cdctypes.InterfaceRegistry) {
 	types.RegisterInterfaces(reg)
+	entropy.RegisterInterfaces(reg)
 }
 
 // DefaultGenesis returns the capability module's default genesis state.
